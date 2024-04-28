@@ -1,3 +1,5 @@
+.DS_Store
+
 /elastic-nodes
 /kibana
 /ml-models
