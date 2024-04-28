@@ -1,14 +1,4 @@
 services:
-  ml-models:
-    image: nginx:latest
-    volumes:
-      - ${ELASTIC_ML_MODELS}:/usr/share/nginx/html
-    ports:
-      - 7070:80
-    environment:
-      - NGINX_HOST=foobar.com
-      - NGINX_PORT=80
-
   setup:
     image: docker.elastic.co/elasticsearch/elasticsearch:${STACK_VERSION}
     volumes:
